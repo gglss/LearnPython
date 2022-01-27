@@ -1,8 +1,14 @@
-# def fibon(n):
-#     a = b = 1
-#     for i in range(n):
-#         yield a
-#         a, b = b, a + b
+def fibon():
+    n = 100
+    for i in range(n):
+        yield i
+    print(i)
+
+gen = fibon()
+print(gen)
+# print(gen.__next__())
+# print(gen.__next__())
+# print(gen.__next__())
 
 
 
@@ -18,3 +24,5 @@
 #
 # for x  in fibon(10):
 #     print(x)
+
+
